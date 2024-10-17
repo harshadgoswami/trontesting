@@ -1,12 +1,14 @@
 import { AxiosHeaders } from 'axios';
 import { TronWeb } from 'tronweb';
+import { TRON_API_KEY } from './config/dev';
+
 
 // Initialize TronWeb instance
 // api key generate from : https://www.trongrid.io/dashboard
 const tronWeb = new TronWeb({
-    fullHost: 'https://api.trongrid.io', // Mainnet
-    // fullHost: 'https://api.shasta.trongrid.io', // Testnet (Shasta)
-    headers: new AxiosHeaders().set("TRON-PRO-API-KEY", "09f72e09-a15e-46a9-9e85-bdf56a728ba5")
+    //fullHost: 'https://api.trongrid.io', // Mainnet
+    fullHost: 'https://api.shasta.trongrid.io', // Testnet (Shasta)
+    headers: new AxiosHeaders().set("TRON-PRO-API-KEY", TRON_API_KEY)
 });
 
 // Function to get TRX transactions for a specific account

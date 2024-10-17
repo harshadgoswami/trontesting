@@ -1,10 +1,11 @@
 import { AxiosHeaders } from 'axios';
 import { TronWeb } from 'tronweb';
+import { TRON_API_KEY } from './config/dev';
 
 // Initialize TronWeb
 const tronWeb = new TronWeb({
-    fullHost: 'https://api.trongrid.io',
-    headers: new AxiosHeaders().set("TRON-PRO-API-KEY", "09f72e09-a15e-46a9-9e85-bdf56a728ba5")  // Optional, use your own API key if needed
+    fullHost: 'https://api.shasta.trongrid.io',
+    headers: new AxiosHeaders().set("TRON-PRO-API-KEY", TRON_API_KEY)  // Optional, use your own API key if needed
 
 });
 
@@ -20,6 +21,6 @@ async function getBalance(address: string) {
 }
 
 // Replace with your Tron address
-const address = 'your-tron-address-here';
+const address = 'TWnkgewgtjYwoS4cdNJy1fiJzae3TcuHRB';
 
 getBalance(address);
