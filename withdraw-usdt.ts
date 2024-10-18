@@ -1,8 +1,11 @@
-import TronWeb from 'tronweb';
+import { AxiosHeaders } from 'axios';
+import { TronWeb } from 'tronweb';
+import { TRON_API_KEY } from './config/dev';
 
 // Initialize TronWeb instance with Full Node, Solidity Node, and Event Server
 const tronWeb = new TronWeb({
-    fullHost: 'https://api.trongrid.io',  // You can also use Shasta Testnet URL for testing
+    fullHost: 'https://api.shasta.trongrid.io', // Testnet (Shasta)
+    headers: new AxiosHeaders().set("TRON-PRO-API-KEY", TRON_API_KEY), // You can also use Shasta Testnet URL for testing
     privateKey: 'your-private-key'        // Replace with your private key
 });
 

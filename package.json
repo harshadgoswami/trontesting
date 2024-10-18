@@ -8,7 +8,8 @@
     "airdrop": "ts-node get-airdrop.ts",
     "getbalance": "ts-node get-balance.ts",
     "gettransaction":"ts-node gettransaction.ts",
-    "withdrawusdt": "ts-node withdraw-usdt.ts"
+    "withdrawusdt": "ts-node withdraw-usdt.ts",
+    "deploy-trc20": "ts-node deploy-trc20.ts"
   },
   "keywords": [],
   "author": "",
