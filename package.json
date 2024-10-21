@@ -9,7 +9,7 @@
     "getbalance": "ts-node get-balance.ts",
     "gettransaction":"ts-node gettransaction.ts",
     "withdrawusdt": "ts-node withdraw-usdt.ts",
-    "deploy-trc20": "ts-node deploy-trc20.ts"
+    "transfer-trc20": "ts-node transfer-trc20.ts"
   },
   "keywords": [],
   "author": "",
